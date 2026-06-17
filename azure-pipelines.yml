@@ -44,7 +44,7 @@ steps:
     kubernetesServiceConnection: 'aks-connection' 
     namespace: 'default'
     manifests: |
-      ./app-deployment.yml 
+      ./app-deployment.yaml 
       # configmap.yml 
       ./mongodb-deployment.yaml 
     containers: |
