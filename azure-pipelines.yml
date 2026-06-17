@@ -44,9 +44,9 @@ steps:
     kubernetesServiceConnection: 'aks-connection' 
     namespace: 'default'
     manifests: |
-      app-deployment.yml 
+      ./app-deployment.yml 
       # configmap.yml 
-      mongodb-deployment.yaml 
+      ./mongodb-deployment.yaml 
     containers: |
       fitnessregistry01.azurecr.io/$(imageRepository):$(imageTag)    
 
