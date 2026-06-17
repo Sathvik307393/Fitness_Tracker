@@ -49,6 +49,7 @@ steps:
       mongodb-deployment.yaml 
     containers: |
       fitnessregistry01.azurecr.io/$(imageRepository):$(imageTag)    
+
 # Slack Notification
 - task: Bash@3
   displayName: 'Slack Notification'
